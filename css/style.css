@@ -621,6 +621,67 @@ ul {
   border-bottom: solid 8px transparent;
   border-left: solid 8px transparent;
 }
+/* Start Special title hover */
+.about-testimonials  h3 {
+  position: relative;
+  border: 1px solid;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  transition-delay: 0.6s;
+}
+.about-testimonials  h3:hover {
+  color: white;
+}
+.about-testimonials h3::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -30px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--main-color);
+  transition: all 1s;
+  transition-timing-function: cubic-bezier(0.93, 0.15, 0.01, 1.24);
+  z-index: -1;
+}
+.about-testimonials h3::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -30px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--main-color);
+  transition: all 1s;
+  transition-timing-function: cubic-bezier(0.93, 0.15, 0.01, 1.24);
+  z-index: -1;
+}
+.about-testimonials h3:hover:before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: calc(100% - 3px);
+  left: 1px;
+  top: 1px;
+  background: var(--main-color);
+  border-radius: 0;
+}
+.about-testimonials  h3:hover:after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: calc(100% - 3px);
+  right: 1px;
+  top: 1px;
+  background: var(--main-color);
+  border-radius: 0;
+  
+}
+/* End Special title hover */
 /* About part 4 */
 .quote {
   padding-top: var(--padding-section);
