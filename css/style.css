@@ -637,7 +637,7 @@ ul {
 .about-testimonials h3::before {
   content: "";
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: -30px;
   width: 10px;
   height: 10px;
@@ -650,7 +650,7 @@ ul {
 .about-testimonials h3::after {
   content: "";
   position: absolute;
-  top: 50%;
+  top: 40%;
   right: -30px;
   width: 10px;
   height: 10px;
